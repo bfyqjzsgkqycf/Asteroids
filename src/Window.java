@@ -12,6 +12,9 @@ public class Window {
         MeListener ll = new MeListener(pic);
         window.addKeyListener(ll);
         window.setVisible(true);
+        window.setTitle("Asteroids");
+        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        window.setResizable(false);
         pic.action();
     }
 }
